@@ -1,5 +1,3 @@
 $(document).ready(function() {
-
-	$('#posts').load('/springmvc-mongodb-example/posts').hide().fadeIn(400);
-	
+	$('#posts').load(getApplicationName()+'/posts').hide().fadeIn(400);
 });

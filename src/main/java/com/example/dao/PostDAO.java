@@ -34,6 +34,9 @@ public class PostDAO {
 		//run query
 		ArrayList<Post> allPostList = (ArrayList<Post>) mongoTemplate
 				.find(query, (Post.class));
+		for (Post post:allPostList){
+			System.out.println(post.getUser());
+		}
 		return allPostList;
 	}
 	
